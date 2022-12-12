@@ -16,5 +16,19 @@ namespace Kutuphane_Otomasyon_Projesi
         {
             InitializeComponent();
         }
+
+        private void personelGirisbtn_Click(object sender, EventArgs e)
+        {
+            string gelenAd = adGiristxt.Text;
+            string gelenSifre = sifreGiristxt.Text;
+            if (gelenAd.Equals("admin")&& gelenSifre.Equals("123"))
+            {
+                MessageBox.Show(text: "Başarılı");
+            }
+            else
+            {
+                MessageBox.Show(text: "Kullanıcı adı veya şifre hatalı!");
+            }
+        }
     }
 }
