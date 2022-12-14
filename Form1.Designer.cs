@@ -49,9 +49,10 @@ namespace Kutuphane_Otomasyon_Projesi
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Location = new System.Drawing.Point(103, 194);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 20);
+            this.label1.Size = new System.Drawing.Size(38, 22);
             this.label1.TabIndex = 1;
             this.label1.Text = "Adı:";
             // 
@@ -65,15 +66,16 @@ namespace Kutuphane_Otomasyon_Projesi
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.Location = new System.Drawing.Point(93, 248);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 20);
+            this.label2.Size = new System.Drawing.Size(48, 22);
             this.label2.TabIndex = 3;
             this.label2.Text = "Şifre:";
             // 
             // personelGirisbtn
             // 
-            this.personelGirisbtn.BackColor = System.Drawing.Color.LightCoral;
+            this.personelGirisbtn.BackColor = System.Drawing.Color.Plum;
             this.personelGirisbtn.Location = new System.Drawing.Point(239, 294);
             this.personelGirisbtn.Name = "personelGirisbtn";
             this.personelGirisbtn.Size = new System.Drawing.Size(90, 38);
@@ -97,7 +99,9 @@ namespace Kutuphane_Otomasyon_Projesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(560, 517);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(590, 560);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.personelGirisbtn);
             this.Controls.Add(this.label2);

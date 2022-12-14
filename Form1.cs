@@ -12,6 +12,7 @@ namespace Kutuphane_Otomasyon_Projesi
 {
     public partial class Form1 : Form
     {
+        KutuphaneOtomasyonEntities db = new KutuphaneOtomasyonEntities();
         public Form1()
         {
             InitializeComponent();
@@ -21,13 +22,17 @@ namespace Kutuphane_Otomasyon_Projesi
         {
             string gelenAd = adGiristxt.Text;
             string gelenSifre = sifreGiristxt.Text;
-            if (gelenAd.Equals("admin")&& gelenSifre.Equals("123"))
+
+            //Linq sorgusu
+            var personel = db.Personeller.Where(x => x.personel_ad.Equals(gelenAd) && x.personel_sifre.Equals(gelenSifre)).FirstOrDefault();
+
+            if(personel == null)
             {
-                MessageBox.Show(text: "Başarılı");
+                MessageBox.Show(text: "Kullanıcı adı veya şifre hatalı!");
             }
             else
             {
-                MessageBox.Show(text: "Kullanıcı adı veya şifre hatalı!");
+                MessageBox.Show(text: "Başarılı :)");
             }
         }
     }
