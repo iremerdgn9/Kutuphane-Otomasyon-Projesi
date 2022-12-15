@@ -33,7 +33,13 @@ namespace Kutuphane_Otomasyon_Projesi
             else
             {
                 MessageBox.Show(text: "Başarılı :)");
+             //işlem başarılı olursa paneli açabilecek.
+             IslemPaneli panel = new IslemPaneli(); //form ismimizi çağırıp nesne oluşturuyoruz.
+            panel.Show(); //butona basınca paneli göster
+            this.Hide(); //bu formu kapat
             }
+           
+
         }
     }
 }
