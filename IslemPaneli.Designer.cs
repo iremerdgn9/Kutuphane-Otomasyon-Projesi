@@ -102,6 +102,7 @@ namespace Kutuphane_Otomasyon_Projesi
             this.ekleKullanicibtn.Text = "Ekle";
             this.ekleKullanicibtn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ekleKullanicibtn.UseVisualStyleBackColor = false;
+            this.ekleKullanicibtn.Click += new System.EventHandler(this.ekleKullanicibtn_Click);
             // 
             // button1
             // 
@@ -125,7 +126,7 @@ namespace Kutuphane_Otomasyon_Projesi
             this.kullaniciBilgiPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.kullaniciBilgiPanel.Location = new System.Drawing.Point(230, 0);
             this.kullaniciBilgiPanel.Name = "kullaniciBilgiPanel";
-            this.kullaniciBilgiPanel.Size = new System.Drawing.Size(926, 56);
+            this.kullaniciBilgiPanel.Size = new System.Drawing.Size(1126, 56);
             this.kullaniciBilgiPanel.TabIndex = 1;
             // 
             // pictureBox1
@@ -133,7 +134,7 @@ namespace Kutuphane_Otomasyon_Projesi
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(236, 121);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(920, 439);
+            this.pictureBox1.Size = new System.Drawing.Size(920, 528);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
@@ -152,11 +153,12 @@ namespace Kutuphane_Otomasyon_Projesi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1156, 681);
+            this.ClientSize = new System.Drawing.Size(1356, 681);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.kullaniciBilgiPanel);
             this.Controls.Add(this.panel1);
+            this.IsMdiContainer = true;
             this.Name = "IslemPaneli";
             this.Text = "IslemPaneli";
             this.Load += new System.EventHandler(this.IslemPaneli_Load);

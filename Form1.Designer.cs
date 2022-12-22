@@ -68,6 +68,7 @@ namespace Kutuphane_Otomasyon_Projesi
             // 
             this.sifreGiristxt.Location = new System.Drawing.Point(340, 262);
             this.sifreGiristxt.Name = "sifreGiristxt";
+            this.sifreGiristxt.PasswordChar = '*';
             this.sifreGiristxt.Size = new System.Drawing.Size(251, 26);
             this.sifreGiristxt.TabIndex = 2;
             // 
